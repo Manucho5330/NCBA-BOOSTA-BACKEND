@@ -1,0 +1,127 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins:
+              - http://localhost:5173
+              - http://localhost:5174
+              - http://127.0.0.1:5173
+              - http://127.0.0.1:5174
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - PATCH
+              - DELETE
+              - OPTIONS
+            allowedHeaders: "*"
+            allowCredentials: true
+      routes:
+        - id: openapi-auth
+          uri: lb://AUTH-SERVICE
+          predicates:
+            - Path=/openapi/auth
+          filters:
+            - SetPath=/v3/api-docs
+        - id: openapi-customer
+          uri: lb://CUSTOMER-SERVICE
+          predicates:
+            - Path=/openapi/customer
+          filters:
+            - SetPath=/v3/api-docs
+        - id: openapi-anchor
+          uri: lb://ANCHOR-SERVICE
+          predicates:
+            - Path=/openapi/anchor
+          filters:
+            - SetPath=/v3/api-docs
+        - id: openapi-banking
+          uri: lb://BANKING-INTEGRATION-SERVICE
+          predicates:
+            - Path=/openapi/banking
+          filters:
+            - SetPath=/v3/api-docs
+        - id: openapi-audit
+          uri: lb://AUDIT-SERVICE
+          predicates:
+            - Path=/openapi/audit
+          filters:
+            - SetPath=/v3/api-docs
+        - id: openapi-reporting
+          uri: lb://REPORTING-SERVICE
+          predicates:
+            - Path=/openapi/reporting
+          filters:
+            - SetPath=/v3/api-docs
+        - id: openapi-scoring
+          uri: lb://PORTFOLIO-SERVICE
+          predicates:
+            - Path=/openapi/scoring
+          filters:
+            - SetPath=/v3/api-docs
+        - id: auth-service
+          uri: lb://AUTH-SERVICE
+          predicates:
+            - Path=/api/v1/auth/**
+        - id: customer-service
+          uri: lb://CUSTOMER-SERVICE
+          predicates:
+            - Path=/api/v1/customers/**,/api/v1/loans/**,/api/v1/drawdowns,/api/v1/drawdowns/**,/api/v1/transactions,/api/v1/transactions/**,/api/v1/repayments,/api/v1/repayments/**,/api/v1/notifications,/api/v1/notifications/**,/api/v1/portfolio/**,/api/v1/customer-data-warehouse/**,/api/v1/anchor-data/**
+        - id: anchor-service
+          uri: lb://ANCHOR-SERVICE
+          predicates:
+            - Path=/api/v1/anchors/**,/api/v1/anchor-onboardings/**
+        - id: anchor-portal
+          uri: lb://ANCHOR-SERVICE
+          predicates:
+            - Path=/api/v1/anchor-portal/**
+        - id: banking-integration-service
+          uri: lb://BANKING-INTEGRATION-SERVICE
+          predicates:
+            - Path=/api/v1/banking/**
+        - id: audit-service
+          uri: lb://AUDIT-SERVICE
+          predicates:
+            - Path=/api/v1/audit/**
+        - id: reporting-service
+          uri: lb://REPORTING-SERVICE
+          predicates:
+            - Path=/api/v1/reports/**
+        - id: portfolio-scoring
+          uri: lb://PORTFOLIO-SERVICE
+          predicates:
+            - Path=/api/v1/scoring/**
+springdoc:
+  swagger-ui:
+    disable-swagger-default-url: true
+    urls:
+      - name: Authentication
+        url: /openapi/auth
+      - name: Customer
+        url: /openapi/customer
+      - name: Anchor
+        url: /openapi/anchor
+      - name: Banking Integration
+        url: /openapi/banking
+      - name: Audit
+        url: /openapi/audit
+      - name: Reporting
+        url: /openapi/reporting
+      - name: Scoring
+        url: /openapi/scoring
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
+boosta:
+  auth:
+    jwt-secret: ${BOOSTA_AUTH_JWT_SECRET:}

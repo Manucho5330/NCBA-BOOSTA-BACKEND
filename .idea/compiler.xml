@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="audit-service" />
+        <module name="customer-service" />
+        <module name="anchor-service" />
+        <module name="portfolio-service" />
+        <module name="config-server" />
+        <module name="auth-service" />
+        <module name="discovery-server" />
+        <module name="common" />
+        <module name="banking-integration-service" />
+        <module name="api-gateway" />
+        <module name="reporting-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lms-service" target="21" />
+      <module name="profile-service" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

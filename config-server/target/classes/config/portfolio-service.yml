@@ -1,0 +1,18 @@
+server:
+  port: 8091
+integrations:
+  scoring:
+    base-url: ${BOOSTA_SCORING_BASE_URL:}
+    api-key: ${BOOSTA_SCORING_API_KEY:}
+boosta:
+  auth:
+    jwt-secret: ${BOOSTA_AUTH_JWT_SECRET:}
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

@@ -1,0 +1,18 @@
+server:
+  port: 8087
+integrations:
+  core-banking:
+    base-url: ${BOOSTA_CORE_BANKING_BASE_URL:}
+    api-key: ${BOOSTA_CORE_BANKING_API_KEY:}
+boosta:
+  auth:
+    jwt-secret: ${BOOSTA_AUTH_JWT_SECRET:}
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

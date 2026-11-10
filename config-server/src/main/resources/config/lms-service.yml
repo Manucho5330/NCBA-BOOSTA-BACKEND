@@ -1,0 +1,18 @@
+server:
+  port: 8082
+customer:
+  service-url: http://CUSTOMER-SERVICE
+anchor:
+  service-url: http://ANCHOR-SERVICE
+boosta:
+  auth:
+    jwt-secret: ${BOOSTA_AUTH_JWT_SECRET:}
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

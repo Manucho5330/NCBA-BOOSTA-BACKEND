@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.ncba.boosta.anchor.services.AnchorOnboardingServiceTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.738 s -- in com.ncba.boosta.anchor.services.AnchorOnboardingServiceTest

@@ -1,0 +1,13 @@
+com\ncba\boosta\auth\repository\AuthAccountRepository.class
+com\ncba\boosta\auth\models\AuthAccount.class
+com\ncba\boosta\auth\config\AuthSecurityConfiguration.class
+com\ncba\boosta\auth\dto\response\BootstrapResponse.class
+com\ncba\boosta\auth\dto\request\BootstrapRequest.class
+com\ncba\boosta\auth\AuthServiceApplication.class
+com\ncba\boosta\auth\services\AuthService$LoginResult.class
+com\ncba\boosta\auth\config\AuthConfiguration.class
+com\ncba\boosta\auth\dto\response\LoginResponse.class
+com\ncba\boosta\auth\controllers\AuthController.class
+com\ncba\boosta\auth\dto\request\LoginRequest.class
+com\ncba\boosta\auth\services\AuthService.class
+com\ncba\boosta\auth\dto\request\ProvisionRequest.class

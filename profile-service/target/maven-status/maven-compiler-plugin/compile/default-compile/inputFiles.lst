@@ -1,0 +1,9 @@
+C:\Users\Emmanuel.nzeki\NCBA-BOOSTA-BACKEND\profile-service\src\main\java\com\ncba\boosta\profile\config\ProfileAuthConfiguration.java
+C:\Users\Emmanuel.nzeki\NCBA-BOOSTA-BACKEND\profile-service\src\main\java\com\ncba\boosta\profile\config\ProfileSecurityConfiguration.java
+C:\Users\Emmanuel.nzeki\NCBA-BOOSTA-BACKEND\profile-service\src\main\java\com\ncba\boosta\profile\controllers\ProfileController.java
+C:\Users\Emmanuel.nzeki\NCBA-BOOSTA-BACKEND\profile-service\src\main\java\com\ncba\boosta\profile\dto\request\CreatePortalUserRequest.java
+C:\Users\Emmanuel.nzeki\NCBA-BOOSTA-BACKEND\profile-service\src\main\java\com\ncba\boosta\profile\dto\response\PortalUserResponse.java
+C:\Users\Emmanuel.nzeki\NCBA-BOOSTA-BACKEND\profile-service\src\main\java\com\ncba\boosta\profile\models\PortalAccount.java
+C:\Users\Emmanuel.nzeki\NCBA-BOOSTA-BACKEND\profile-service\src\main\java\com\ncba\boosta\profile\ProfileServiceApplication.java
+C:\Users\Emmanuel.nzeki\NCBA-BOOSTA-BACKEND\profile-service\src\main\java\com\ncba\boosta\profile\repository\PortalAccountRepository.java
+C:\Users\Emmanuel.nzeki\NCBA-BOOSTA-BACKEND\profile-service\src\main\java\com\ncba\boosta\profile\services\ProfileService.java

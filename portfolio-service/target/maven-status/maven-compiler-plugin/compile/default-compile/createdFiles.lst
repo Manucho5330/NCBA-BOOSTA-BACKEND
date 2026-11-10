@@ -1,0 +1,7 @@
+com\ncba\boosta\portfolio\services\ScoringIntegration.class
+com\ncba\boosta\portfolio\controllers\ScoringController.class
+com\ncba\boosta\portfolio\services\impl\HttpScoringIntegration.class
+com\ncba\boosta\portfolio\config\ScoringSecurityConfiguration.class
+com\ncba\boosta\portfolio\dto\request\CustomerScoringRequest.class
+com\ncba\boosta\portfolio\dto\request\AnchorScoringRequest.class
+com\ncba\boosta\portfolio\PortfolioServiceApplication.class

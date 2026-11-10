@@ -1,0 +1,3 @@
+com\ncba\boosta\common\exceptions\ResourceNotFoundException.class
+com\ncba\boosta\common\exceptions\ApiError.class
+com\ncba\boosta\common\exceptions\GlobalExceptionHandler.class

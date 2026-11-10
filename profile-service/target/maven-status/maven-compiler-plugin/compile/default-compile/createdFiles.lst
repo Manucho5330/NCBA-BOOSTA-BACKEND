@@ -1,0 +1,10 @@
+com\ncba\boosta\profile\repository\PortalAccountRepository.class
+com\ncba\boosta\profile\controllers\ProfileController.class
+com\ncba\boosta\profile\config\ProfileAuthConfiguration.class
+com\ncba\boosta\profile\services\ProfileService$AuthProvisionRequest.class
+com\ncba\boosta\profile\dto\response\PortalUserResponse.class
+com\ncba\boosta\profile\ProfileServiceApplication.class
+com\ncba\boosta\profile\models\PortalAccount.class
+com\ncba\boosta\profile\config\ProfileSecurityConfiguration.class
+com\ncba\boosta\profile\services\ProfileService.class
+com\ncba\boosta\profile\dto\request\CreatePortalUserRequest.class

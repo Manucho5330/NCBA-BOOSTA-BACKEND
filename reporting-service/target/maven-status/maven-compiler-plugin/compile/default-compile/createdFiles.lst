@@ -1,0 +1,3 @@
+com\ncba\boosta\reporting\controllers\ReportingController.class
+com\ncba\boosta\reporting\ReportingServiceApplication.class
+com\ncba\boosta\reporting\services\PortfolioReportingService.class

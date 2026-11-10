@@ -1,0 +1,9 @@
+com\ncba\boosta\audit\controllers\AuditController.class
+com\ncba\boosta\audit\dto\response\AuditEventResponse.class
+com\ncba\boosta\audit\services\AuditService$AuditRequest.class
+com\ncba\boosta\audit\services\AuditService.class
+com\ncba\boosta\audit\config\AuditSecurityConfiguration.class
+com\ncba\boosta\audit\models\AuditEvent.class
+com\ncba\boosta\audit\AuditServiceApplication.class
+com\ncba\boosta\audit\dto\request\CreateAuditEventRequest.class
+com\ncba\boosta\audit\repository\AuditEventRepository.class

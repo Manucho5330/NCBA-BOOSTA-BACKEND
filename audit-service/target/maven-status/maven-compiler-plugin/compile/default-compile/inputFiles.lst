@@ -1,0 +1,8 @@
+C:\Users\Emmanuel.nzeki\NCBA-BOOSTA-BACKEND\audit-service\src\main\java\com\ncba\boosta\audit\AuditServiceApplication.java
+C:\Users\Emmanuel.nzeki\NCBA-BOOSTA-BACKEND\audit-service\src\main\java\com\ncba\boosta\audit\config\AuditSecurityConfiguration.java
+C:\Users\Emmanuel.nzeki\NCBA-BOOSTA-BACKEND\audit-service\src\main\java\com\ncba\boosta\audit\controllers\AuditController.java
+C:\Users\Emmanuel.nzeki\NCBA-BOOSTA-BACKEND\audit-service\src\main\java\com\ncba\boosta\audit\dto\request\CreateAuditEventRequest.java
+C:\Users\Emmanuel.nzeki\NCBA-BOOSTA-BACKEND\audit-service\src\main\java\com\ncba\boosta\audit\dto\response\AuditEventResponse.java
+C:\Users\Emmanuel.nzeki\NCBA-BOOSTA-BACKEND\audit-service\src\main\java\com\ncba\boosta\audit\models\AuditEvent.java
+C:\Users\Emmanuel.nzeki\NCBA-BOOSTA-BACKEND\audit-service\src\main\java\com\ncba\boosta\audit\repository\AuditEventRepository.java
+C:\Users\Emmanuel.nzeki\NCBA-BOOSTA-BACKEND\audit-service\src\main\java\com\ncba\boosta\audit\services\AuditService.java
